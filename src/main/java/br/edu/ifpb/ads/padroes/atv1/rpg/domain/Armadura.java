@@ -1,4 +1,4 @@
-package br.edu.ifpb.ads.padroes.atv1.rpg;
+package br.edu.ifpb.ads.padroes.atv1.rpg.domain;
 
 public class Armadura {
 
