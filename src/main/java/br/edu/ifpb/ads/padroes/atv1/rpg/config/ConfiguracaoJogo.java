@@ -12,7 +12,7 @@ public class ConfiguracaoJogo {
         return configuracaoJogo;
     }
 
-    public ConfiguracaoJogo() {
+    private ConfiguracaoJogo() {
         this.nivelDificuldade = 1;
     }
 

@@ -77,9 +77,8 @@ public class Main {
         System.out.println("--- PERSONAGEM ESPECIAL ---");
         PersonagemEspecial especializador = new EspecializadorHumanoGuerreiro();
 
-        Personagem Lendario = especializador.especializar(arthas); //Arthas é o humano guerreiro
-
-        imprimir(Lendario);
+        Personagem lendario = especializador.especializar(arthas); //Arthas é o humano guerreiro
+        imprimir(lendario);
 
         System.out.println("--- GARANTINDO QUE O ORIGINAL NÃO FOI ALTERADO (CLONE FUNCIONOU) ---");
         imprimir(arthas);

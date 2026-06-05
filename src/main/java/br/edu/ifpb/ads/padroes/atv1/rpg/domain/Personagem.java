@@ -19,7 +19,21 @@ public class Personagem implements Cloneable {
     @Override
     public Personagem clone() {
         try {
-            return (Personagem) super.clone();
+            Personagem clone = (Personagem) super.clone();
+
+            if (this.habilidades != null) {
+                clone.habilidades = this.habilidades.clone();
+            }
+
+            if (this.arma != null) {
+                clone.arma = this.arma.clone();
+            }
+
+            if (this.armadura != null) {
+                clone.armadura = this.armadura.clone();
+            }
+
+            return clone;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError("Falha ao clonar personagem", e);
         }
