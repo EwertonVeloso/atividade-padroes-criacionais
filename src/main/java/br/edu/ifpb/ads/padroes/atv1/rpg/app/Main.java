@@ -1,4 +1,4 @@
-package rpg;
+package br.edu.ifpb.ads.padroes.atv1.rpg.app;
 
 import br.edu.ifpb.ads.padroes.atv1.rpg.config.ConfiguracaoJogo;
 import br.edu.ifpb.ads.padroes.atv1.rpg.domain.Personagem;
@@ -23,7 +23,7 @@ import br.edu.ifpb.ads.padroes.atv1.rpg.factory.personagens.orcs.FabricaPersonag
 import br.edu.ifpb.ads.padroes.atv1.rpg.service.PersonagemEspecial;
 import br.edu.ifpb.ads.padroes.atv1.rpg.service.impl.EspecializadorHumanoGuerreiro;
 
-public class MainTest {
+public class Main {
 
     public static void main(String[] args) {
         Personagem arthas = new FabricaPersonagemHumanoGuerreiro(
@@ -74,7 +74,7 @@ public class MainTest {
         System.out.println();
 
         // Testando o Personagem Especial
-        System.out.println("--- TESTE DE PERSONAGEM ESPECIAL (PROTOTYPE) ---");
+        System.out.println("--- PERSONAGEM ESPECIAL ---");
         PersonagemEspecial especializador = new EspecializadorHumanoGuerreiro();
 
         Personagem Lendario = especializador.especializar(arthas); //Arthas é o humano guerreiro
